@@ -1,0 +1,27 @@
+
+.postCardWrapper {
+    direction: flex;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-content: left;
+    flex-wrap: wrap;
+}
+
+.textMe {
+    padding-left: 10px
+}
+.uploaded {
+    width: 10px;
+    padding: 20px;
+}
+
+.mx-2 {
+    margin-top: 10px;
+}
+.likeButtonCSS {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin:7px;
+}

@@ -1,0 +1,86 @@
+nav {
+  display: flex;
+  flex-direction: row-reverse;
+  transform: rotate(-90deg) translate3d(-50%,0,0);
+  top: 15%;
+  position: fixed;
+  
+}
+nav h2 {
+  margin-right: 20px;
+  color: #575757;
+  transition: all 0.2s ease-in-out;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+nav h2:hover {
+  margin-right: 20px;
+  color: #ec704c;
+  font-size: 250%;
+  text-decoration: underline;
+  text-shadow: 0 0 10px rgba(226, 192, 21, 0.4);
+}
+nav h2.active {
+  color: #ec704c;
+  text-decoration: underline;
+}
+.shopHover:hover {
+  color: rgb(42, 62, 246);
+  text-decoration: underline;
+}
+
+.navAll {
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25px;
+  transition: all 0.5s ease;
+}
+.Logout {
+  color:rgb(232, 127, 127);
+}
+.Logout:hover {
+  color:rgb(230, 39, 39);
+  font-weight: bolder;
+}
+.img {
+  position:fixed;
+  width: 75px;
+  height: 75px;
+  border-radius:60%;
+  background-image: linear-gradient(
+    to right,
+    #54b3d6,
+    #7a47e1 50%,
+    rgb(255, 179, 221) 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.img:before {
+  content: '';
+  background: #54b3d6;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+}
+.img:hover {
+  background-position: 0;
+  cursor:url(https://cdn.custom-cursor.com/db/9896/32/cute-shiba-inu-cursor.png) , default!important;
+}
+ .img:hover::before {
+  width: 100%;
+}
+
+@media screen and (max-width: 480px) {
+  .img {
+    width: 50px;
+    height: 50px;
+  }
+}
