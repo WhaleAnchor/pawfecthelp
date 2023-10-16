@@ -6,7 +6,7 @@
     "scripts": {
         "start": "serve build -s -n -L -p $PORT",
         "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
-        "install": "cd server && npm i && cd ../client && npm i",
+        "install": "cd server && npm ci --only=prod && cd ../client && npm ci --only=prod",
         "seed": "cd server && npm run seed",
         "build": "CI=false react-scripts build"
     },
