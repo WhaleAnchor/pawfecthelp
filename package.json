@@ -4,7 +4,7 @@
     "description": "",
     "main": "server/server.js",
     "scripts": {
-        "start": "node server/server.js",
+        "start": "serve build -s -n -L -p $PORT",
         "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
         "install": "cd server && npm i && cd ../client && npm i",
         "seed": "cd server && npm run seed",
@@ -17,6 +17,7 @@
     },
     "dependencies": {
         "mdb-react-ui-kit": "^5.1.0",
-        "moment": "^2.29.4"
+        "moment": "^2.29.4",
+        "serve": "^12.0.0"
     }
 }
